@@ -12,6 +12,8 @@ body {
 #main {
   width: 100%;
 }
+
+/* ---------------- Landing page --------------------  */
 #home {
   color: #fff;
   width: 100%;
@@ -63,36 +65,76 @@ body {
 }
 .heading-2 h5 {
   text-transform: uppercase;
-  margin-top: .5vw;
+  margin-top: 0.5vw;
   font-size: 1vw;
   text-align: right;
 }
-.homefooter{
-    padding: 0 2vw;
-    position: absolute;
-    width: 100%;
-    bottom: 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.homefooter {
+  padding: 0 2vw;
+  position: absolute;
+  width: 100%;
+  bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.homefooter a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
+.homefooter a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
-.iconset{
-    display: flex;
-    gap: 5px;
+.iconset {
+  display: flex;
+  gap: 5px;
+}
+.homefooter .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #888;
 }
 
-.homefooter .circle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #888;
+/* ---------- Second ( Mid of the web page ) ------------*/
+
+.second{
+  color: #fff;
+  padding-right: 10vw;
+  padding-top: 200px;
+  background-color: black;
+  width: 100%;
+  height: 200vh;
 }
+
+.element{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5vw 3vw;
+  padding-right: 0;
+  border-top: 1px solid #888;
+  width: 100%;
+}
+.element h1{
+  text-transform: uppercase;
+  font-size: 7.6vw;
+  opacity: .7;
+}
+
+.elementLast{
+  border-bottom: 1px solid #888;
+}
+
+.element img{
+  display: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+}
+
+
+/* --------------- About ---------------------- */
