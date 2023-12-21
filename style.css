@@ -9,12 +9,34 @@ body {
   width: 100%;
   height: 100%;
 }
+#minicircle{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 9999;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem{
+ transform: translateY(100%);
+}
+
+
 #main {
+  background-color: black;
   width: 100%;
 }
 
 /* ---------------- Landing page --------------------  */
 #home {
+  position: relative;
   color: #fff;
   width: 100%;
   height: 100vh;
@@ -52,6 +74,9 @@ body {
 }
 
 .blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   width: fit-content;
 }
 .blocktext h5 {
@@ -60,6 +85,9 @@ body {
   text-align: right;
 }
 .heading-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   margin-top: 100px;
   padding-right: 50px;
 }
@@ -69,7 +97,7 @@ body {
   font-size: 1vw;
   text-align: right;
 }
-.homefooter {
+.homebottom {
   padding: 0 2vw;
   position: absolute;
   width: 100%;
@@ -79,7 +107,7 @@ body {
   align-items: center;
 }
 
-.homefooter a {
+.homebottom a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -88,7 +116,7 @@ body {
   display: flex;
   gap: 5px;
 }
-.homefooter .circle {
+.homebottom .circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +134,7 @@ body {
   padding-top: 200px;
   background-color: black;
   width: 100%;
-  height: 200vh;
+  height: 175vh;
 }
 
 .element {
@@ -176,26 +204,45 @@ body {
 
 /* ---------- contact section ------------ */
 
-.contact{
+.contact {
   color: #fff;
   padding: 20px 30px;
   padding-bottom: 7vw;
   background-color: black;
 }
-.contact h5{
+.contact h5 {
   text-transform: uppercase;
-  opacity: .6;
+  opacity: 0.6;
 }
 
-.contact h3{
+.contact h3 {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 10px;
-
 }
 
-/*  --------- footer --------- */ 
+/*  --------- footer --------- */
 
-
-
-
+.footer {
+  color: #fff;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.footerleft {
+  display: flex;
+  gap: 20px;
+}
+.footerright {
+  display: flex;
+  gap: 30px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
